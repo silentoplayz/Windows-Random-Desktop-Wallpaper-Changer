@@ -46,6 +46,34 @@ Once you have hardcoded your image folder path into the script, you can change y
 & "C:\Path\To\Script\Set-RandomWallpaper.ps1"
 ```
 
+### Creating a Desktop Shortcut
+1. **Right-Click on the Script**:
+   - Right-click on the `Set-RandomWallpaper.ps1` file.
+
+2. **Select "Send to" > "Desktop (create shortcut)"**:
+   - In the context menu, hover over "Send to," and then choose "Desktop (create shortcut)."
+
+3. **Right-Click on the Shortcut**:
+   - Right-click on the newly created shortcut.
+
+4. **Choose "Properties"**:
+   - In the context menu, select "Properties."
+
+5. **In the "Shortcut" Tab, Click on the "Advanced" Button**:
+   - Navigate to the "Shortcut" tab in the Properties window.
+   - Click on the "Advanced" button.
+
+6. **In the "Target" Field, Prepend with PowerShell Execution**:
+   - In the Shortcut tab, locate the "Target" field.
+   - Prepend the existing path with the following:
+     ```powershell
+     powershell.exe -ExecutionPolicy Bypass -File "C:\Path\To\Script\Set-RandomWallpaper.ps1"
+     ```
+     Replace `"C:\Path\To\Script\Set-RandomWallpaper.ps1"` with the actual path to your PowerShell script.
+
+7. **Click "OK" to Save Changes**:
+    - Click "OK" in the Properties window to save the changes.
+
 ### Setting Up Automatic Wallpaper Change
 To have your wallpaper change automatically at startup or log-in:
 
