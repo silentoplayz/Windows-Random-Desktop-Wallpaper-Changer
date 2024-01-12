@@ -87,6 +87,17 @@ To have your wallpaper change automatically at startup or log-in:
 
 Replace `C:\Path\To\Script\Set-RandomWallpaper.ps1` with the full path to where the script is saved and `C:\Path\To\Your\Image\Folder` with the path to your folder containing the images.
 
+# Reversing Automatic Wallpaper Change Setup
+To revert the changes and stop your wallpaper from changing automatically:
+
+1. **Open Task Scheduler**.
+2. In the Task Scheduler library, **find the task** named `Random Wallpaper`.
+3. **Right-click** on the task and select **Delete** or **Disable**.
+   - **Delete**: This will completely remove the task from the Task Scheduler.
+   - **Disable**: This will keep the task but stop it from running at startup or log-in.
+
+After completing these steps, your system will no longer change the wallpaper automatically.
+
 ## Contributing
 Contributions, issues, and feature requests are welcome! Feel free to check [issues page](<LinkToYourIssuesPage>).
 
