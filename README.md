@@ -58,17 +58,10 @@ To have your wallpaper change automatically at startup or log-in:
    - Trigger: Choose `At startup` and `At log on`.
    - Action: Start a program.
    - Program/script: `powershell.exe`
-   - Add arguments: `-ExecutionPolicy Bypass -File "C:\Path\To\Script\Set-RandomWallpaper.ps1" -folderPath "<PathToImages>"`
-   - Start in (optional): `<PathToScript>`
+   - Add arguments: `-ExecutionPolicy Bypass -File "C:\Path\To\Script\Set-RandomWallpaper.ps1" -folderPath "C:\Path\To\Your\Image\Folder"`
+   - Start in (optional): `C:\Path\To\Script`
 
-Replace `<PathToScript>` with the path where the script is saved and `<PathToImages>` with the path to your images folder.
-
-## Customization
-
-You can modify the default image folder path and log file path directly in the script:
-
-- `$folderPath` - Path to your folder containing the images.
-- `$logPath` - Path to the log file.
+Replace `C:\Path\To\Script\Set-RandomWallpaper.ps1` with the full path to where the script is saved and `C:\Path\To\Your\Image\Folder` with the path to your folder containing the images.
 
 ## Contributing
 
