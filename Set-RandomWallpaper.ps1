@@ -5,13 +5,15 @@ param (
     [string]$folderPath = "C:\Path\To\Your\Image\Folder"
 )
 
-# Path for the log file
-$logPath = "C:\Path\To\Log\File.log"
+# Path for the log file (remove "#" from beginning of the line below to enable logging)
+# $logPath = "C:\Path\To\Log\File.log"
 
 # Function to log messages
 function Write-Log {
     param ([string]$message)
-    Add-Content -Path $logPath -Value "$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss'): $message"
+    if ($logPath) {
+        Add-Content -Path $logPath -Value "$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss'): $message"
+    }
 }
 
 # Check if the folder path exists
