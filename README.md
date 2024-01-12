@@ -9,7 +9,7 @@ This PowerShell script automatically changes your desktop wallpaper to a random 
 - **Error Logging**: Optionally logs errors for troubleshooting without disturbing the user experience.
 - **Customizable**: Easy to set up with your own folder of images.
 
-## Installation
+# Installation
 1. **Download the Script**:
    - Clone this repository or download the script `Set-RandomWallpaper.ps1` directly.
   
@@ -31,22 +31,21 @@ This PowerShell script automatically changes your desktop wallpaper to a random 
    - Replace `"C:\Path\To\Log\File.log"` with the desired path for your log file.
    - This log file will record any errors or important information about the script's operation. If you don't want to log errors, set `$logPath` to `$null` or leave it as is.
 
-## Usage
-#### Running the Script With Parameter
+# Running the Script With Specified Image Folder Path
 If you want to specify the image folder path each time you run the script, use the following command in PowerShell, replacing `<PathToScript>` and `<PathToImages>` with your actual paths:
 
 ```powershell
 & "C:\Path\To\Script\Set-RandomWallpaper.ps1" -folderPath "<PathToImages>"
 ```
 
-#### Running the Script With Hardcoded Path
+# Running the Script With Hardcoded Image Folder Path
 Once you have hardcoded your image folder path into the script, you can change your wallpaper instantly using the script without specifying the path each time. Use this command in PowerShell, replacing `<PathToScript>` with the path to your script:
 
 ```powershell
 & "C:\Path\To\Script\Set-RandomWallpaper.ps1"
 ```
 
-### Creating a Desktop Shortcut
+# Creating a Desktop Shortcut
 1. **Right-Click on the Script**:
    - Right-click on the `Set-RandomWallpaper.ps1` file.
 
@@ -74,7 +73,7 @@ Once you have hardcoded your image folder path into the script, you can change y
 7. **Click "OK" to Save Changes**:
     - Click "OK" in the Properties window to save the changes.
 
-### Setting Up Automatic Wallpaper Change
+# Setting Up Automatic Wallpaper Change
 To have your wallpaper change automatically at startup or log-in:
 
 1. **Open Task Scheduler**.
