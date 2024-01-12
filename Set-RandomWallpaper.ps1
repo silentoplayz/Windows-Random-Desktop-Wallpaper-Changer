@@ -1,17 +1,15 @@
 # PowerShell script to set a random desktop wallpaper
 
-# Specify the path to the folder containing the images
 param (
-    [string]$folderPath = "C:\Path\To\Your\Image\Folder"
+    [string]$folderPath = "C:\Path\To\Your\Image\Folder",
+    [string]$logPath = $null,  # Making log file optional with a default value of $null
+    [switch]$skipLogging = $false  # Adding a switch parameter to skip logging
 )
-
-# Path for the log file (remove "#" from beginning of the line below to enable logging)
-# $logPath = "C:\Path\To\Log\File.log"
 
 # Function to log messages
 function Write-Log {
     param ([string]$message)
-    if ($logPath) {
+    if ($logPath -and -not $skipLogging) {
         Add-Content -Path $logPath -Value "$(Get-Date -Format 'yyyy-MM-dd HH:mm:ss'): $message"
     }
 }
