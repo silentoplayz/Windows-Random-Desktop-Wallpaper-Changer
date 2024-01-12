@@ -21,7 +21,7 @@ if (-not (Test-Path -Path $folderPath)) {
 }
 
 # Get all image files from the folder
-$images = Get-ChildItem -Path $folderPath -Include @("*.jpg", "*.jpeg", "*.png") -Recurse
+$images = Get-ChildItem -Path $folderPath -Include @("*.bmp", "*.gif", "*.jpg", "*.jpeg", "*.webp", "*.png") -Recurse
 
 # Check if images are found
 if ($images.Count -eq 0) {
