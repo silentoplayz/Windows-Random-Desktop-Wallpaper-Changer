@@ -1,16 +1,15 @@
 # Windows Random Desktop Wallpaper Changer
 
+## Description
 This PowerShell script automatically changes your desktop wallpaper to a random image from a specified folder. It's designed to run silently at system startup or user log-in, making your desktop background fresh and surprising every time you start your computer or log in.
 
 ## Features
-
 - **Random Selection**: Chooses a random wallpaper from a specified folder.
 - **Silent Operation**: Runs in the background without interrupting the user.
 - **Error Logging**: Optionally logs errors for troubleshooting without disturbing the user experience.
 - **Customizable**: Easy to set up with your own folder of images.
 
 ## Installation
-
 1. **Download the Script**:
    - Clone this repository or download the script `Set-RandomWallpaper.ps1` directly.
   
@@ -33,7 +32,6 @@ This PowerShell script automatically changes your desktop wallpaper to a random 
    - This log file will record any errors or important information about the script's operation. If you don't want to log errors, set `$logPath` to `$null` or leave it as is.
 
 ## Usage
-
 #### Running the Script With Parameter
 If you want to specify the image folder path each time you run the script, use the following command in PowerShell, replacing `<PathToScript>` and `<PathToImages>` with your actual paths:
 
@@ -49,7 +47,6 @@ Once you have hardcoded your image folder path into the script, you can change y
 ```
 
 ### Setting Up Automatic Wallpaper Change
-
 To have your wallpaper change automatically at startup or log-in:
 
 1. **Open Task Scheduler**.
@@ -64,9 +61,7 @@ To have your wallpaper change automatically at startup or log-in:
 Replace `C:\Path\To\Script\Set-RandomWallpaper.ps1` with the full path to where the script is saved and `C:\Path\To\Your\Image\Folder` with the path to your folder containing the images.
 
 ## Contributing
-
 Contributions, issues, and feature requests are welcome! Feel free to check [issues page](<LinkToYourIssuesPage>).
 
 ## License
-
 Distributed under the MIT License. See `LICENSE` for more information.
