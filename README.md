@@ -1,9 +1,9 @@
 # Windows Random Desktop Wallpaper Changer
 
-## Description
+# Description
 This PowerShell script automatically changes your desktop wallpaper to a random image from a specified folder. It's designed to run silently at system startup or user log-in, making your desktop background fresh and surprising every time you start your computer or log in.
 
-## Features
+# Features
 - **Random Selection**: Chooses a random wallpaper from a specified folder.
 - **Silent Operation**: Runs in the background without interrupting the user.
 - **Error Logging**: Optionally logs errors for troubleshooting without disturbing the user experience.
@@ -92,7 +92,7 @@ To revert the changes and stop your wallpaper from changing automatically:
 
 1. **Open Task Scheduler**.
 2. In the Task Scheduler library, **find the task** named `Random Wallpaper`.
-3. **Right-click** on the task and select **Delete** or **Disable**.
+3. **Right-click** on the task and select `Delete` or `Disable`.
    - **Delete**: This will completely remove the task from the Task Scheduler.
    - **Disable**: This will keep the task but stop it from running at startup or log-in.
 
