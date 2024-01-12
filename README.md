@@ -6,7 +6,7 @@ This PowerShell script automatically changes your desktop wallpaper to a random 
 
 - **Random Selection**: Chooses a random wallpaper from a specified folder.
 - **Silent Operation**: Runs in the background without interrupting the user.
-- **Error Logging**: Silently logs errors for troubleshooting without disturbing the user experience.
+- **Error Logging**: Optionally logs errors for troubleshooting without disturbing the user experience.
 - **Customizable**: Easy to set up with your own folder of images.
 
 ## Installation
@@ -30,7 +30,7 @@ This PowerShell script automatically changes your desktop wallpaper to a random 
 4. **Set Up a Log File (Optional)**:
    - In the script, find the line `$logPath = "C:\Path\To\Log\File.log"`.
    - Replace `"C:\Path\To\Log\File.log"` with the desired path for your log file.
-   - This log file will record any errors or important information about the script's operation.
+   - This log file will record any errors or important information about the script's operation. If you don't want to log errors, set `$logPath` to `$null` or leave it as is.
 
 ## Usage
 
