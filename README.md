@@ -65,13 +65,13 @@ Once you have hardcoded your image folder path into the script, you can change y
 
 6. **Click "OK" in the Properties window to save the changes.**:
 
-# Setting Up Automatic Wallpaper Change
-To have your wallpaper change automatically at startup or log-in:
+# Setting Up Automatic Windows Random Desktop Wallpaper Changer
+To have your wallpaper change automatically at startup or log-in, follow these steps:
 
 1. **Open Task Scheduler**.
 2. **Create a New Task**:
    - Name: `Random Wallpaper`
-   - Trigger: Choose `At startup` and `At log on`.
+   - Trigger: Choose both `At startup` and `At log on`.
    - Action: Start a program.
    - Program/script: `powershell.exe`
    - Add arguments: `-ExecutionPolicy Bypass -File "C:\Path\To\Script\Set-RandomWallpaper.ps1" -folderPath "C:\Path\To\Your\Image\Folder"`
@@ -79,14 +79,21 @@ To have your wallpaper change automatically at startup or log-in:
 
 Replace `C:\Path\To\Script\Set-RandomWallpaper.ps1` with the full path to where the script is saved and `C:\Path\To\Your\Image\Folder` with the path to your folder containing the images.
 
+3. **Add a Scheduled Trigger**:
+   - Edit the created task.
+   - In the Triggers tab, click `New`.
+   - Choose `Daily` or `Weekly` based on your preference.
+   - Set the **start date** and **time**.
+   - Adjust recurrence settings as needed.
+
 # Reversing Automatic Wallpaper Change Setup
 To revert the changes and stop your wallpaper from changing automatically:
 
 1. **Open Task Scheduler**.
 2. In the Task Scheduler library, **find the task** named `Random Wallpaper`.
-3. **Right-click** on the task and select `Delete` or `Disable`.
-   - **Delete**: This will completely remove the task from the Task Scheduler.
-   - **Disable**: This will keep the task but stop it from running at startup or log-in.
+3. **Right-click** on the task and select either:
+   - **Delete**: This completely removes the task from Task Scheduler.
+   - **Disable**: This keeps the task but stops it from running at startup or log-in.
 
 After completing these steps, your system will no longer change the wallpaper automatically.
 
