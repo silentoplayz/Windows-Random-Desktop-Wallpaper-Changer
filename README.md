@@ -32,14 +32,14 @@ This PowerShell script automatically changes your desktop wallpaper to a random 
    - This log file will record any errors or important information about the script's operation. If you don't want to log errors, set `$logPath` to `$null` or leave it as is.
 
 # Running the Script With Specified Image Folder Path
-If you want to specify the image folder path each time you run the script, use the following command in PowerShell, replacing `<PathToScript>` and `<PathToImages>` with your actual paths:
+If you want to specify the image folder path each time you run the script, use the following command in PowerShell, replacing the paths with your actual paths:
 
 ```powershell
-& "C:\Path\To\Script\Set-RandomWallpaper.ps1" -folderPath "<PathToImages>"
+& "C:\Path\To\Script\Set-RandomWallpaper.ps1" -folderPath "C:\Path\To\Your\Image\Folder"
 ```
 
 # Running the Script With Hardcoded Image Folder Path
-Once you have hardcoded your image folder path into the script, you can change your wallpaper instantly using the script without specifying the path each time. Use this command in PowerShell, replacing `<PathToScript>` with the path to your script:
+Once you have hardcoded your image folder path into the script, you can change your wallpaper instantly using the script without specifying the path each time. Use this command in PowerShell, replacing the path to your script:
 
 ```powershell
 & "C:\Path\To\Script\Set-RandomWallpaper.ps1"
