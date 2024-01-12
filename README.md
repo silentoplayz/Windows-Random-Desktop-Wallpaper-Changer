@@ -9,6 +9,17 @@ This PowerShell script automatically changes your desktop wallpaper to a random 
 - **Error Logging**: Optionally logs errors for troubleshooting without disturbing the user experience.
 - **Customizable**: Easy to set up with your own folder of images.
 
+## Compatibility and Prerequisites
+
+- **Operating System**: Windows (Tested on Windows 10)
+- **PowerShell Version**: PowerShell 5.1 or later
+- **Execution Policy**: Ensure that the PowerShell execution policy allows script execution. You can check the current execution policy with the following command:
+  ```powershell
+  Get-ExecutionPolicy
+  ```
+If it's restricted, you can change it to allow script execution with: ```Set-ExecutionPolicy RemoteSigned```
+- Task Scheduler Permissions: Ensure your user account has the necessary permissions to create and manage tasks in Task Scheduler.
+
 # Installation
 1. **Download the Script**:
    - Clone this repository or download the script `Set-RandomWallpaper.ps1` directly.
