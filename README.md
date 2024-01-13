@@ -58,16 +58,24 @@ This PowerShell script automatically changes your desktop wallpaper to a random 
 ```
 
 # Creating a Desktop Shortcut
-1. **Right-click on the `Set-RandomWallpaper.ps1` file**:
+**You can create a shortcut to the `Set-RandomWallpaper.ps1` script either on your desktop or in any other folder of your choice. Here's how to do it:**
 
+## Creating a Shortcut on the Desktop
+1. **Right-click on the `Set-RandomWallpaper.ps1` file**.
 2. **Select "Send to" > "Desktop (create shortcut)"**:
    - In the context menu, hover over "Send to," and then choose "Desktop (create shortcut)."
 
-3. **Right-click on the newly created shortcut.**
+## Creating a Shortcut in a Different Folder
+1. **Right-click on the `Set-RandomWallpaper.ps1` file**.
+2. **Select "Create Shortcut"**:
+   - This will create a new shortcut in the same folder.
+3. **Move the Shortcut to Your Desired Location**:
+   - Drag the shortcut to any folder where you want it to be.
 
-4. **In the context menu, select "Properties.**:
-
-5. **In the "Target" Field, Prepend with PowerShell Execution**:
+# Configuring the Shortcut
+1. **Right-click on the newly created shortcut**.
+2. **In the context menu, select "Properties"**.
+3. **In the "Target" Field, Prepend with PowerShell Execution**:
    - In the Shortcut tab, locate the "Target" field.
    - Prepend the existing path with the following:
      ```powershell
