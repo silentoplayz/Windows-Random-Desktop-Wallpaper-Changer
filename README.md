@@ -1,5 +1,5 @@
 # **Windows Random Desktop Wallpaper Changer**
-This PowerShell script automatically changes your desktop wallpaper to a random image from a specified folder. It's designed to run silently at system startup or user log-in, making your desktop background fresh and surprising every time you start your computer or log in.
+This PowerShell script automatically changes your desktop wallpaper to a random image from a specified folder. It's designed for ease of use and runs silently at system startup or user log-in, ensuring a fresh and surprising desktop background every time you start your computer, log in, or based on a set interval.
 
 # Features
 - **Random Selection**: Chooses a random wallpaper from a specified folder.
@@ -142,7 +142,9 @@ This PowerShell script automatically changes your desktop wallpaper to a random 
 
 ## Script Does Not Run
 - **Check Execution Policy**: Ensure your PowerShell execution policy allows script execution. Run `Get-ExecutionPolicy` in PowerShell. If it's restricted, change it with `Set-ExecutionPolicy RemoteSigned`.
+- **Run as Administrator**: Sometimes, running PowerShell as an administrator can resolve script execution issues.
 - **Verify PowerShell Version**: This script requires PowerShell 5.1 or later. Check your version with `$PSVersionTable.PSVersion`.
+- **Restart PowerShell**: After making changes to the system or script, restart PowerShell to ensure all changes are applied.
 
 ## Wallpaper Does Not Change
 - **Check Image Folder Path**: Ensure the `$folderPath` in the script correctly points to your image folder.
@@ -150,6 +152,7 @@ This PowerShell script automatically changes your desktop wallpaper to a random 
 
 ## Script Runs But No Changes Occur
 - **Permissions**: Ensure you have read and write permissions for the script and image folder.
+- **Check Image Integrity**: Verify that the images in your folder are not corrupted and are in a supported format.
 - **Error Log**: If you've set up a log file, check it for any error messages that can help identify the issue.
 
 ## Task Scheduler Issues
@@ -159,9 +162,8 @@ This PowerShell script automatically changes your desktop wallpaper to a random 
 ## Script Errors Out
 - **Syntax Errors**: If you modified the script, ensure there are no syntax errors. Revert to the original script if necessary.
 
-## General Tips
-- **Restart PowerShell**: After making changes to the system or script, restart PowerShell to ensure all changes are applied.
-- **Run as Administrator**: Some actions may require elevated permissions. Try running the script or PowerShell as an administrator.
+# Tips and Tricks
+**Discover Hidden Wallpapers**: Did you know that Windows has a collection of hidden wallpapers? You can find these in `C:\Windows\Web`. Feel free to explore this directory and use these hidden gems as part of your wallpaper collection with the Windows Random Desktop Wallpaper Changer.
 
 # Contributing
 **Contributions, issues, and feature requests are welcome! If you experience any issues, please report them on the [issues page](https://github.com/Silentoplayz/Windows-Random-Desktop-Wallpaper-Changer/issues).**
