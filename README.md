@@ -19,7 +19,7 @@ This PowerShell script automatically changes your desktop wallpaper to a random 
   ```powershell
   Set-ExecutionPolicy RemoteSigned
   ```
-- Task Scheduler Permissions: Ensure your user account has the necessary permissions to create and manage tasks in Task Scheduler.
+- **Task Scheduler Permissions**: Ensure your user account has the necessary permissions to create and manage tasks in Task Scheduler.
 
 # Installation
 1. **Download the Script**:
@@ -44,14 +44,14 @@ This PowerShell script automatically changes your desktop wallpaper to a random 
    - This log file will record any errors or important information about the script's operation. If you don't want to log errors, set `$logPath` to `$null` or leave it as is.
 
 # Running the Script With a Hardcoded Image Folder Path
-Once you have hardcoded your image folder path into the script, you can change your wallpaper instantly using the script without specifying the path each time. Use this command in PowerShell, replacing the path to your script:
+**Once you have hardcoded your image folder path into the script, you can change your wallpaper instantly using the script without specifying the path each time. Use this command in PowerShell, replacing the path to your script:**
 
 ```powershell
 & "C:\Path\To\Script\Set-RandomWallpaper.ps1"
 ```
 
 # Running the Script With a Specified Image Folder Path
-If you want to specify the image folder path each time you run the script, use the following command in PowerShell, replacing the paths with your actual paths:
+**If you want to specify the image folder path each time you run the script, use the following command in PowerShell, replacing the paths with your actual paths:**
 
 ```powershell
 & "C:\Path\To\Script\Set-RandomWallpaper.ps1" -folderPath "C:\Windows\Web\Screen"
@@ -75,10 +75,10 @@ If you want to specify the image folder path each time you run the script, use t
      ```
      Replace `"C:\Path\To\Script\Set-RandomWallpaper.ps1"` with the actual path to your PowerShell script.
 
-6. **Click "OK" in the Properties window to save the changes.**:
+6. **Click "OK" in the Properties window to save the changes.**
 
 # Setting Up Automatic Windows Random Desktop Wallpaper Changer
-To have your wallpaper change automatically at startup or log-in, follow these steps:
+**To have your wallpaper change automatically at startup or log-in, follow these steps:**
 
 1. **Open Task Scheduler**.
 2. **Create a New Task**:
@@ -89,7 +89,7 @@ To have your wallpaper change automatically at startup or log-in, follow these s
    - Add arguments: `-ExecutionPolicy Bypass -File "C:\Path\To\Script\Set-RandomWallpaper.ps1" -folderPath "C:\Path\To\Your\Image\Folder"`
    - Start in (optional): `C:\Path\To\Script`
 
-Replace `C:\Path\To\Script\Set-RandomWallpaper.ps1` with the full path to where the script is saved and `C:\Path\To\Your\Image\Folder` with the path to your folder containing the images.
+**Replace `C:\Path\To\Script\Set-RandomWallpaper.ps1` with the full path to where the script is saved and `C:\Path\To\Your\Image\Folder` with the path to your folder containing the images.**
 
 3. **Adding a Scheduled Trigger**:
    - Edit the created task.
@@ -99,7 +99,7 @@ Replace `C:\Path\To\Script\Set-RandomWallpaper.ps1` with the full path to where 
    - Adjust recurrence settings as needed.
 
 # Reversing Automatic Wallpaper Change Setup
-To revert the changes and stop your wallpaper from changing automatically:
+**To revert the changes and stop your wallpaper from changing automatically:**
 
 1. **Open Task Scheduler**.
 2. In the Task Scheduler library, **find the task** named `Random Wallpaper`.
@@ -107,10 +107,10 @@ To revert the changes and stop your wallpaper from changing automatically:
    - **Delete**: This completely removes the task from Task Scheduler.
    - **Disable**: This keeps the task but stops it from running at startup or log-in.
 
-After completing these steps, your system will no longer change the wallpaper automatically.
+**After completing these steps, your system will no longer change the wallpaper automatically.**
 
 # Troubleshooting
-# **If you encounter issues while using the Windows Random Desktop Wallpaper Changer, here are some common problems and their solutions:**
+**If you encounter issues while using the Windows Random Desktop Wallpaper Changer, here are some common problems and their solutions:**
 
 ## Script Does Not Run
 - **Check Execution Policy**: Ensure your PowerShell execution policy allows script execution. Run `Get-ExecutionPolicy` in PowerShell. If it's restricted, change it with `Set-ExecutionPolicy RemoteSigned`.
@@ -136,7 +136,7 @@ After completing these steps, your system will no longer change the wallpaper au
 - **Run as Administrator**: Some actions may require elevated permissions. Try running the script or PowerShell as an administrator.
 
 # Contributing
-Contributions, issues, and feature requests are welcome! If you experience any issues, please report them on the **[issues page](https://github.com/Silentoplayz/Windows-Random-Desktop-Wallpaper-Changer/issues)**.
+**Contributions, issues, and feature requests are welcome! If you experience any issues, please report them on the [issues page](https://github.com/Silentoplayz/Windows-Random-Desktop-Wallpaper-Changer/issues).**
 
 # License
-Distributed under the MIT License. See `LICENSE` for more information.
+**Distributed under the MIT License. See `LICENSE` for more information.**
