@@ -110,7 +110,7 @@ To revert the changes and stop your wallpaper from changing automatically:
 After completing these steps, your system will no longer change the wallpaper automatically.
 
 # Troubleshooting
-If you encounter issues while using the Windows Random Desktop Wallpaper Changer, here are some common problems and their solutions:
+# **If you encounter issues while using the Windows Random Desktop Wallpaper Changer, here are some common problems and their solutions:**
 
 ## Script Does Not Run
 - **Check Execution Policy**: Ensure your PowerShell execution policy allows script execution. Run `Get-ExecutionPolicy` in PowerShell. If it's restricted, change it with `Set-ExecutionPolicy RemoteSigned`.
@@ -135,10 +135,8 @@ If you encounter issues while using the Windows Random Desktop Wallpaper Changer
 - **Restart PowerShell**: After making changes to the system or script, restart PowerShell to ensure all changes are applied.
 - **Run as Administrator**: Some actions may require elevated permissions. Try running the script or PowerShell as an administrator.
 
-If you continue to experience issues, please report them on the [issues page]([<LinkToYourIssuesPage>](https://github.com/Silentoplayz/Windows-Random-Desktop-Wallpaper-Changer/issues).
-
 # Contributing
-Contributions, issues, and feature requests are welcome!
+Contributions, issues, and feature requests are welcome! If you experience any issues, please report them on the **[issues page](https://github.com/Silentoplayz/Windows-Random-Desktop-Wallpaper-Changer/issues)**.
 
 # License
 Distributed under the MIT License. See `LICENSE` for more information.
