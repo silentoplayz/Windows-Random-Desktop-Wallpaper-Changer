@@ -62,11 +62,13 @@ This PowerShell script automatically changes your desktop wallpaper to a random 
 
 ## Creating a Shortcut on the Desktop
 1. **Right-click on the `Set-RandomWallpaper.ps1` file**.
+
 2. **Select "Send to" > "Desktop (create shortcut)"**:
    - In the context menu, hover over "Send to," and then choose "Desktop (create shortcut)."
 
 ## Creating a Shortcut in a Different Folder
 1. **Right-click on the `Set-RandomWallpaper.ps1` file**.
+ 
 2. **Select "Create Shortcut"**:
    - This will create a new shortcut in the same folder.
 3. **Move the Shortcut to Your Desired Location**:
@@ -74,7 +76,9 @@ This PowerShell script automatically changes your desktop wallpaper to a random 
 
 # Configuring the Shortcut
 1. **Right-click on the newly created shortcut**.
+ 
 2. **In the context menu, select "Properties"**.
+
 3. **In the "Target" Field, Prepend with PowerShell Execution**:
    - In the Shortcut tab, locate the "Target" field.
    - Prepend the existing path with the following:
@@ -83,12 +87,13 @@ This PowerShell script automatically changes your desktop wallpaper to a random 
      ```
      Replace `"C:\Path\To\Script\Set-RandomWallpaper.ps1"` with the actual path to your PowerShell script.
 
-6. **Click "OK" in the Properties window to save the changes.**
+4. **Click "OK" in the Properties window to save the changes.**
 
 # Setting Up Automatic Windows Random Desktop Wallpaper Changer
 **To have your wallpaper change automatically at startup or log-in, follow these steps:**
 
 1. **Open Task Scheduler**.
+
 2. **Create a New Task**:
    - Name: `Random Wallpaper`
    - Trigger: Choose both `At startup` and `At log on`.
@@ -110,7 +115,9 @@ This PowerShell script automatically changes your desktop wallpaper to a random 
 **To revert the changes and stop your wallpaper from changing automatically:**
 
 1. **Open Task Scheduler**.
+
 2. In the Task Scheduler library, **find the task** named `Random Wallpaper`.
+ 
 3. **Right-click** on the task and select either:
    - **Delete**: This completely removes the task from Task Scheduler.
    - **Disable**: This keeps the task but stops it from running at startup or log-in.
