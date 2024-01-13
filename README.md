@@ -2,7 +2,7 @@
 This PowerShell script automatically changes your desktop wallpaper to a random image from a specified folder. It's designed for ease of use and runs silently at system startup or user log-in, ensuring a fresh and surprising desktop background every time you start your computer, log in, or based on a set interval.
 
 # Features
-- **Random Selection**: Chooses a random wallpaper from a specified folder.
+- **Random Selection**: Chooses a random wallpaper from a specified folder and sets it as the desktop background.
 - **Customizable**: Easy to set up with your own folder of images.
 - **Error Logging**: Optionally logs errors for troubleshooting without disturbing the user experience.
 
