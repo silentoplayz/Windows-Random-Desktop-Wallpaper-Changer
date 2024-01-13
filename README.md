@@ -43,18 +43,18 @@ This PowerShell script automatically changes your desktop wallpaper to a random 
    - Replace `"C:\Path\To\Log\File.log"` with the desired path for your log file.
    - This log file will record any errors or important information about the script's operation. If you don't want to log errors, set `$logPath` to `$null` or leave it as is.
 
-# Running the Script With Specified Image Folder Path
-If you want to specify the image folder path each time you run the script, use the following command in PowerShell, replacing the paths with your actual paths:
-
-```powershell
-& "C:\Path\To\Script\Set-RandomWallpaper.ps1" -folderPath "C:\Windows\Web\Screen"
-```
-
-# Running the Script With Hardcoded Image Folder Path
+# Running the Script With a Hardcoded Image Folder Path
 Once you have hardcoded your image folder path into the script, you can change your wallpaper instantly using the script without specifying the path each time. Use this command in PowerShell, replacing the path to your script:
 
 ```powershell
 & "C:\Path\To\Script\Set-RandomWallpaper.ps1"
+```
+
+# Running the Script With a Specified Image Folder Path
+If you want to specify the image folder path each time you run the script, use the following command in PowerShell, replacing the paths with your actual paths:
+
+```powershell
+& "C:\Path\To\Script\Set-RandomWallpaper.ps1" -folderPath "C:\Windows\Web\Screen"
 ```
 
 # Creating a Desktop Shortcut
@@ -91,7 +91,7 @@ To have your wallpaper change automatically at startup or log-in, follow these s
 
 Replace `C:\Path\To\Script\Set-RandomWallpaper.ps1` with the full path to where the script is saved and `C:\Path\To\Your\Image\Folder` with the path to your folder containing the images.
 
-3. **Add a Scheduled Trigger**:
+3. **Adding a Scheduled Trigger**:
    - Edit the created task.
    - In the Triggers tab, click `New`.
    - Choose `Daily` or `Weekly` based on your preference.
@@ -112,33 +112,33 @@ After completing these steps, your system will no longer change the wallpaper au
 # Troubleshooting
 If you encounter issues while using the Windows Random Desktop Wallpaper Changer, here are some common problems and their solutions:
 
-# Script Does Not Run
+## Script Does Not Run
 - **Check Execution Policy**: Ensure your PowerShell execution policy allows script execution. Run `Get-ExecutionPolicy` in PowerShell. If it's restricted, change it with `Set-ExecutionPolicy RemoteSigned`.
 - **Verify PowerShell Version**: This script requires PowerShell 5.1 or later. Check your version with `$PSVersionTable.PSVersion`.
 
-# Wallpaper Does Not Change
+## Wallpaper Does Not Change
 - **Check Image Folder Path**: Ensure the `$folderPath` in the script correctly points to your image folder.
 - **Image Format Compatibility**: Verify that the images in your folder are in a format supported by your Windows version.
 
-# Script Runs But No Changes Occur
+## Script Runs But No Changes Occur
 - **Permissions**: Ensure you have read and write permissions for the script and image folder.
 - **Error Log**: If you've set up a log file, check it for any error messages that can help identify the issue.
 
-# Task Scheduler Issues
+## Task Scheduler Issues
 - **Task Configuration**: Double-check the task settings in Task Scheduler, especially the `Program/script` and `Add arguments` fields.
 - **User Permissions**: Ensure your user account has the necessary permissions to create and manage tasks in Task Scheduler.
 
-# Script Errors Out
+## Script Errors Out
 - **Syntax Errors**: If you modified the script, ensure there are no syntax errors. Revert to the original script if necessary.
 
-# General Tips
+## General Tips
 - **Restart PowerShell**: After making changes to the system or script, restart PowerShell to ensure all changes are applied.
 - **Run as Administrator**: Some actions may require elevated permissions. Try running the script or PowerShell as an administrator.
 
 If you continue to experience issues, please report them on the [issues page]([<LinkToYourIssuesPage>](https://github.com/Silentoplayz/Windows-Random-Desktop-Wallpaper-Changer/issues).
 
-## Contributing
-Contributions, issues, and feature requests are welcome! Feel free to check [issues page]([<LinkToYourIssuesPage>](https://github.com/Silentoplayz/Windows-Random-Desktop-Wallpaper-Changer/issues).
+# Contributing
+Contributions, issues, and feature requests are welcome!
 
-## License
+# License
 Distributed under the MIT License. See `LICENSE` for more information.
